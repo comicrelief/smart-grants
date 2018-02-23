@@ -1,0 +1,61 @@
+{% extends "layout.html" %} {% block page_title %} Are you elegible for a smart grant? {% endblock %} {% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-xlarge">Smart grants title</h1>
+            <div class="current-question" id="current-question">
+
+                <div class="question">
+                    <h2 class="heading-large">
+                        Are you looking to find a project with specific objectives?
+                    </h2>
+                    <div class="question-body">
+
+                        <p class="hint">
+                            Comic Relief will not usually fund building costs, the purchase of vehicles, land or heavy equipment unless it can be clearly
+                            shown that such expenditure is proportionately small in relation to the overall budget and adequately
+                            justified as essential to the proposed activity.
+                        </p>
+
+                        <div>
+                            <fieldset>
+
+                                <div class="multiple-choice">
+                                    <input id="radio-inline-1" type="radio" name="radio-group" checked value="apply">
+                                    <label for="radio-inline-1">Yes, project has specific objectives.</label>
+                                </div>
+                                <div class="multiple-choice">
+                                    <input id="radio-inline-1" type="radio" name="radio-group" value="nope">
+                                    <label for="radio-inline-1">I would like to fund my operational costs.</label>
+                                </div>
+                                <div class="multiple-choice">
+                                    <input id="radio-inline-2" type="radio" name="radio-group" value="nope">
+                                    <label for="radio-inline-2">None the above apply</label>
+                                </div>
+                            </fieldset>
+
+                        </div>
+
+                    </div>
+                </div>
+                <p>
+                    <br> Not sure? Still have more questions? You
+                    <a class="js-open-chat" href="#">
+                        chat directly with our staff
+                    </a>
+                </p>
+                <div class="next-question">
+                    <input type="hidden" name="next" value="1">
+                    <button type="submit" data-action="next" class="medium button">Next step</button>
+                </div>
+                <p>
+                    <br>
+                    <a href="question-two">Previous step</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}
