@@ -1,0 +1,61 @@
+{% extends "layout.html" %} {% block page_title %} Are you elegible for a smart grant? {% endblock %} {% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-xlarge">Smart grants title</h1>
+            <div class="current-question" id="current-question">
+
+                <div class="question">
+                    <h2 class="heading-large">
+                        Is your application for an organisations registered in the United Kingdom.
+                    </h2>
+                    <div class="question-body">
+
+                        <p class="hint">Comic Relief welcomes proposals from organisations registered in the United Kingdom (including the
+                            Channel Islands and the Isle of Man). Proposals may also be accepted for work in the UK from
+                            UK non-registered organisations which have a formal signed constitution.
+                        </p>
+
+
+                        <div>
+                            <fieldset>
+
+                                <div class="multiple-choice">
+                                    <input id="radio-inline-1" type="radio" name="radio-group" checked value="question-three">
+                                    <label for="radio-inline-1">Yes, my organisation is registered in UK.</label>
+                                </div>
+                                <div class="multiple-choice">
+                                    <input id="radio-inline-1" type="radio" name="radio-group" value="question-three">
+                                    <label for="radio-inline-1">My organisation have a formal signed constitution.</label>
+                                </div>
+                                <div class="multiple-choice">
+                                    <input id="radio-inline-2" type="radio" name="radio-group" value="nope">
+                                    <label for="radio-inline-2">None the above apply</label>
+                                </div>
+                            </fieldset>
+
+                        </div>
+
+                    </div>
+                </div>
+                <p>
+                    <br> Not sure? Still have more questions? You
+                    <a href="javascript:alert('bot')">
+                        chat directly with our staff
+                    </a>
+                </p>
+                <div class="next-question">
+                    <input type="hidden" name="next" value="1">
+                    <button type="submit" data-action="next" class="medium button">Next step</button>
+                </div>
+                <p>
+                    <br>
+                    <a href="question-one">Previous step</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

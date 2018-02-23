@@ -19,4 +19,9 @@ $(document).ready(function () {
   // to toggle hidden content
   var showHideContent = new GOVUK.ShowHideContent()
   showHideContent.init()
+
+  // bind form
+  $('button[data-action="next"]').click(function() {
+    location.href = $('input[name=radio-group]:checked').val()
+  })
 })

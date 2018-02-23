@@ -17,14 +17,14 @@
                             of study or attainment of qualifications.</p>
 
                         <div>
-                            <fieldset class="inline">
+                            <fieldset>
 
                                 <div class="multiple-choice">
-                                    <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                                    <input id="radio-inline-1" type="radio" name="radio-group" value="nope">
                                     <label for="radio-inline-1">Individual</label>
                                 </div>
                                 <div class="multiple-choice">
-                                    <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+                                    <input id="radio-inline-2" checked type="radio" name="radio-group" value="question-two">
                                     <label for="radio-inline-2">Organisation</label>
                                 </div>
                             </fieldset>
@@ -35,7 +35,7 @@
                 <p>&nbsp;</p>
                 <div class="next-question">
                     <input type="hidden" name="next" value="1">
-                    <button type="submit" class="medium button">Next step</button>
+                    <button type="submit" data-action="next" class="medium button">Next step</button>
                 </div>
             </div>
         </div>
