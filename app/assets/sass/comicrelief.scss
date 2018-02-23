@@ -7,3 +7,74 @@ $path: "/public/images/";
 @import 'govuk-elements';
 
 @import url('https://pattern-lab-systest.apps.comicrelief.com/css/themes/cr/2017/cr17.css');
+
+.button {
+    display: inline-block !important;
+    width: auto !important;
+    margin: 0 auto !important;
+    padding: 23px 40px 19px  !important;
+    cursor: pointer  !important;
+    -webkit-transition: 0.3s all  !important;
+    -o-transition: 0.3s all  !important;
+    transition: 0.3s all  !important;
+    text-align: center !important;
+    vertical-align: middle  !important;
+    text-decoration: none  !important;
+    letter-spacing: 1.8px  !important;
+    text-transform: uppercase  !important;
+    border: none  !important;
+    font-family: "Sailec-Bold",sans-serif  !important;
+    font-size: 18px  !important;
+    line-height: 18px  !important;
+    border-radius: 30px  !important;
+    background-clip: padding-box  !important;
+    color: #fff !important;
+    background-color: #ea0043 !important;
+}
+
+a:visited {
+  color: #fff !important;
+}
+
+p {
+  padding: 0 !important;
+  font-family: "Sailec-Regular",sans-serif !important;
+  font-size: 18px !important;
+  line-height: 29px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Sailec-Regular",sans-serif !important;
+}
+
+h1 {
+     margin: 0 0 20px !important;
+    color: #29022c  !important;
+    font-family: "Sailec-Bold",sans-serif  !important;
+    font-size: 41px  !important;
+    line-height: 48px  !important;
+}
+
+h2 {
+    font-family: "Sailec-Medium",sans-serif !important;
+    font-size: 32px !important;
+    line-height: 41px !important;
+}
+
+.header-global {
+  display:none !important;
+}
+
+#global-header, .header-wrapper {
+  background-color: #ea0043 !important;
+}
+
+.multiple-choice label {
+  padding-left: 40px !important;
+  padding-top: 4px  !important;
+}
+
+.multiple-choice [type=radio] + label::after {
+  top: 7px !important;
+  left: 7px !important;
+}
