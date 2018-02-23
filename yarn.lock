@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@comicrelief/pattern-lab@^7.24.8":
+  version "7.24.8"
+  resolved "https://registry.yarnpkg.com/@comicrelief/pattern-lab/-/pattern-lab-7.24.8.tgz#babffa9ec1febd7435d97f6158243115d7bfcbd1"
+  dependencies:
+    susy "^2.2.12"
+
 "@gulp-sourcemaps/identity-map@1.X":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@gulp-sourcemaps/identity-map/-/identity-map-1.0.1.tgz#cfa23bc5840f9104ce32a65e74db7e7a974bbee1"
@@ -5157,6 +5163,10 @@ supports-color@^5.2.0:
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.2.0.tgz#b0d5333b1184dd3666cbe5aa0b45c5ac7ac17a4a"
   dependencies:
     has-flag "^3.0.0"
+
+susy@^2.2.12:
+  version "2.2.12"
+  resolved "https://registry.yarnpkg.com/susy/-/susy-2.2.12.tgz#644c2441ed00d293287e8d49a016dbf919215953"
 
 sync-request@^4.0.3:
   version "4.1.0"
