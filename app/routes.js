@@ -8,4 +8,8 @@ router.get('/', function (req, res) {
 
 // Add your routes here - above the module.exports line
 
+router.get('/grant', function (req, res) {
+  res.render('grant')
+})
+
 module.exports = router
