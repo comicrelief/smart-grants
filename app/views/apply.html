@@ -1,0 +1,38 @@
+{% extends "layout.html" %} {% block page_title %} Are you elegible for a smart grant? {% endblock %} {% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-xlarge">Smart grants title</h1>
+            <div class="current-question" id="current-question">
+
+                <div class="question">
+                    <h2 class="heading-large">
+                        Congratulations, you are elegible for our Smart Grant
+                    </h2>
+
+                    <p>
+
+                        <a class="button" href="https://www.comicrelief.com/funding/applying-for-grants">
+                            Click here to apply for Smart Grant
+                        </a>
+                    </p>
+                    <p>
+                        <br>
+                        <a href="/grant">start again</a>
+                    </p>
+
+                    <p>
+                        Not sure? Still have more questions? You
+                        <a class="js-open-chat" href="#">
+                            chat directly with our staff
+                        </a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}
