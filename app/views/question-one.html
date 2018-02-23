@@ -1,0 +1,45 @@
+{% extends "layout.html" %} {% block page_title %} Are you elegible for a smart grant? {% endblock %} {% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-xlarge">Smart grants title</h1>
+            <div class="current-question" id="current-question">
+
+                <div class="question">
+                    <h2 class="heading-large">
+                        Are you applying for an organisation?
+                    </h2>
+                    <div class="question-body">
+
+                        <p class="hint">Comic Relief does not support or fund general appeals, individual and group sponsorship, marketing
+                            appeals, proposals for bursaries from individuals or proposals from individuals for the funding
+                            of study or attainment of qualifications.</p>
+
+                        <div>
+                            <fieldset class="inline">
+
+                                <div class="multiple-choice">
+                                    <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                                    <label for="radio-inline-1">Individual</label>
+                                </div>
+                                <div class="multiple-choice">
+                                    <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+                                    <label for="radio-inline-2">Organisation</label>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </div>
+                <p>&nbsp;</p>
+                <div class="next-question">
+                    <input type="hidden" name="next" value="1">
+                    <button type="submit" class="medium button">Next step</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}
