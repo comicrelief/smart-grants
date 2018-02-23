@@ -1,17 +1,11 @@
-{% extends "layout.html" %}
-
-{% block page_title %}
-  GOV.UK prototype kit
-{% endblock %}
-
-{% block content %}
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit {% endblock %} {% block content %}
 
 <main id="content" role="main">
   <div class="grid-row">
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
-        ComicRelief Grants
+        Comic Relief Grants
         <span class="heading-secondary">How can we help you to get funding</span>
       </h1>{{releaseVersion | log }}
       <p>
@@ -19,22 +13,20 @@
       </p>
 
       <p>
-				<a href="/grant" class="button button-start">
-					Apply for the "Smart Grant"
-				</a>
-			</p>
+        <a href="/grant" class="button">
+          Apply for the "Smart Grant"
+        </a>
+      </p>
 
-			<p>
-				<a href="javascript:alert('bot')">
-					Still have more questions
-				</a>
-			</p>
+      <p>
+        Not sure? Still have more questions? You
+        <a class="js-open-chat" href="#">
+          chat directly with our staff
+        </a>
+      </p>
 
     </div>
   </div>
-    <div id="root"></div>
 </main>
 
 {% endblock %}
-
-
